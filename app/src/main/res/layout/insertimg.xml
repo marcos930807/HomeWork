@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <RelativeLayout
+        android:id="@+id/imagecontainer"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:bootstrapBrand="primary"
+            app:bootstrapText="Seleccionar"
+            app:showOutline="true"
+            app:materialIcon="md_add_a_photo"
+            android:layout_margin="@dimen/fab_margin"
+            app:fontAwesomeIcon="fa_align_center"
+            app:roundedCorners="true" />
+
+        <LinearLayout
+            android:layout_below="@+id/btnselect"
+            android:layout_margin="@dimen/fab_margin"
+            android:id="@+id/lphotoa"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                android:id="@+id/Ima"
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/wall"
+                app:hasBorder="true"
+                app:bootstrapBrand="info"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/photoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                app:met_floatingLabel="normal"
+
+                app:met_singleLineEllipsis="true"
+                android:hint="@string/et_hint_photoa"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lphotob"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_below="@+id/lphotoa"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                android:id="@+id/Imb"
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/wall"
+                app:hasBorder="true"
+                app:bootstrapBrand="info"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/photob"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                app:met_floatingLabel="normal"
+                android:inputType="textEmailAddress"
+
+                android:hint="@string/et_hint_photob"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lphotoc"
+            android:layout_below="@+id/lphotob"
+            android:layout_margin="@dimen/fab_margin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+                android:id="@+id/Imc"
+
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/wall"
+                app:bootstrapSize="xs"
+                app:hasBorder="true"
+                app:bootstrapBrand="info"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/photoc"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                app:met_floatingLabel="normal"
+
+                app:met_singleLineEllipsis="true"
+                android:inputType="number"
+                android:hint="@string/et_hint_photoc"/>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

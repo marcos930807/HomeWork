@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/tViewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_input_notice"
+        />
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/eTtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_hint_title"
+        android:ems="10"
+        android:inputType="text"
+        />
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/eTbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_hint_body"
+        android:ems="10"
+        android:inputType="text"
+        />
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/eTprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_hint_price"
+        android:ems="10"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/eTmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_hint_mail"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/eTownername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_hint_owner"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/eTnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_hint_number"
+        android:ems="10"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/fabinsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+
+
+
+
+</LinearLayout>

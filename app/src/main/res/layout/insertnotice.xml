@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/noticecontainer"
+
+        app:layout_constraintBottom_toTopOf="@id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.beardedhen.androidbootstrap.BootstrapDropDown
+            android:layout_margin="@dimen/fab_margin"
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bootstrapSize="md"
+
+            app:fontAwesomeIcon="fa_amazon"
+            app:materialIcon="md_add_shopping_cart"
+            app:showOutline="true"
+            app:roundedCorners="true"
+            app:dropdownResource="@array/bootstrap_dropdown_notice_categories"
+
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/ltitle"
+
+            android:layout_below="@+id/categories"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/noticetitle"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                app:met_floatingLabel="normal"
+                app:met_maxCharacters="80"
+                app:met_singleLineEllipsis="true"
+                android:hint="@string/et_hint_title"/>
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/noticeprice"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                app:met_floatingLabel="normal"
+                android:inputType="number"
+                android:hint="@string/et_hint_price"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/ltitle"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+
+            android:layout_height="match_parent">
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/noticebody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    app:met_floatingLabel="normal"
+
+                    android:hint="@string/et_hint_body"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

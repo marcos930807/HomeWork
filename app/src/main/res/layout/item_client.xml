@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/spacing_xlarge">
+
+    <!--<com.beardedhen.androidbootstrap.BootstrapCircleThumbnail-->
+        <!--app:hasBorder="false"-->
+        <!--android:id="@+id/icon"-->
+        <!--app:bootstrapSize="xs"-->
+        <!--android:layout_width="48dp"-->
+        <!--android:layout_height="48dp"-->
+        <!--tools:src="@mipmap/ic_launcher"/>-->
+    <com.github.ivbaranov.mli.MaterialLetterIcon
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/icon"
+        app:mli_letter=""
+        app:mli_shape_color="@color/_color_lib_blue_700"
+        app:mli_letter_size="26"
+        app:mli_letter_color="@color/md_white_1000"
+        app:mli_initials_number="2"
+        app:mli_initials="true"
+        app:mli_letters_number="2"
+        app:mli_shape_type="round_rect"
+        />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_xlarge"
+        android:layout_marginRight="@dimen/spacing_xlarge"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="May 14, 2015"/>
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            tools:text="Light Rain"/>
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            tools:text="Light Rain"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:id="@+id/indice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:id="@+id/childs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:roundedCorners="true"
+            app:bootstrapBrand="info"
+            app:bootstrapHeading="h6"
+
+
+            tools:text="0"/>
+
+    </LinearLayout>
+
+</LinearLayout>

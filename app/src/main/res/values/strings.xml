@@ -1,0 +1,243 @@
+<resources>
+    <string name="app_name">Robotrevo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hello_blank_fragment2">Hello 2</string>
+    <string name="hello_blank_fragment3">Hello 3</string>
+    <string name="you_orderer">Seleccion</string>
+
+
+    //Notice Strings
+    <string name="tv_input_notice">Rellene la Info</string>
+    <string name="et_hint_title">Titulo del Anuncio</string>
+    <string name="et_hint_body">Cuerpo del Anuncio</string>
+    <string name="et_hint_price">Precio</string>
+    <string name="et_hint_mail">Correo del Anunciante</string>
+    <string name="et_hint_owner">Nombre del Anunciante</string>
+    <string name="et_hint_number">Numero de Telefono</string>
+    <string name="et_hint_photoa">Ruta de la photo a</string>
+    <string name="et_hint_photob">Ruta de la photo b</string>
+    <string name="et_hint_photoc">Ruta de la photo c</string>
+    <string name="et_hint_captcha">Respuesta del captcha</string>
+
+    //Notice options Strings
+    <string name="option_upload">Subir a Revolico</string>
+    <string name="option_no_captcha">NO captcha test</string>
+    <string name="option_upload_nopic">Subir sin Fotos</string>
+    <string name="option_edit_money">Cambiar Precio</string>
+    <string name="option_edit">Editar el Anuncio</string>
+    <string name="option_delete">Borrar</string>
+
+    //Client options Strings
+
+
+
+    <string name="option_edit_moneyc">Cambiar Precio</string>
+    <string name="option_edit_c">Editar datos del cliente</string>
+    <string name="option_new_notice">Insertar Anuncio</string>
+    <string name="option_new_notice_desc">Insertar un Anuncio para este cliente especificamente</string>
+
+
+    //Dialogs
+
+    <string name="dialog_input">Nuevo Precio</string>
+    <string name="dialog_input_hint">Precio</string>
+
+    <string name="option_upload_desc">Sube este anuncio a Revolico tras responder el captcha</string>
+    <string name="option_upload_desc_nopic">Sube este anuncio a Revolico sin fotos tras responder el captcha</string>
+    <string name="option_edit_money_desc">Edita únicamente el precio del anuncio</string>
+    <string name="option_edit_desc">Muestra la interfaz donde se crea el anuncio para que pueda editarlo completamente</string>
+    <string name="option_edit_desc_c">Muestra la interfaz donde se crea al cliente para que pueda editarlo completamente</string>
+    <string name="option_delete_desc">Borrar de la base de datos</string>
+
+    //Buttons
+    <string name="btntoast">Toast 1</string>
+    <string name="btndialog">Owesome dialog</string>
+    <string name="btncustomdialog">Owesome Custom dialog</string>
+    <string name="btnchoice">Owesome Choice dialog</string>
+    <string name="btncolor">Owesome Color picker</string>
+
+    //Menu
+    <string name="mnlist">Recycler Example</string>
+    <string name="mndialog">Dialogs Example</string>
+    <string name="mnbd">BD Example</string>
+
+    //Array
+    <string-array name="theme_option">
+        <item>DarkMode</item>
+        <item>Traslucent</item>
+        <item>AccentColor</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_theme">Tema</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="color_palette">Seleccione un Color</string>
+    <string name="colors">Tonalidad</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable Dark theme</string>
+    <string name="pref_description_social_recommendations">Habilitar tema oscuro </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+    <string name="pref_title_theme">Selecciona un color</string>
+    <string name="pref_title_primary">Selecciona un color primario</string>
+    <string name="pref_title_accent">Selecciona un color secundario</string>
+
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_notice_detail">NoticeDetail</string>
+    <string name="title_activity_upload">NoticeUpload</string>
+    <string name="title_activity_notice_detail2">NoticeDetail2</string>
+    <string name="title_home">Anuncio</string>
+    <string name="title_dashboard">Contacto</string>
+    <string name="title_notifications">Imagenes</string>
+
+
+    //Categories
+
+    <array name="bootstrap_dropdown_notice_categories">
+        <item>{dropdown_header}Compra Venta</item>
+        <item>Celulares/Líneas/Accesorios</item>
+        <item>Reproductor MP3/MP4/IPOD</item>
+        <item>Reproductor DVD/VCD/DVR</item>
+        <item>Televisor</item>
+        <item>Cámara Foto/Video</item>
+        <item>Aire Acondicionado</item>
+        <item>Consola Videojuego/Juegos</item>
+        <item>Satélite</item>
+        <item>Electrodomésticos</item>
+        <item>Muebles/Decoración</item>
+        <item>Ropa/Zapato/Accesorios</item>
+        <item>Intercambio/Regalo</item>
+        <item>Mascotas/Animales</item>
+        <item>Divisas</item>
+        <item>Libros/Revistas</item>
+        <item>Joyas/Relojes</item>
+        <item>Antiguedades/Colección</item>
+        <item>Implementos Deportivos</item>
+        <item>Arte</item>
+        <item>Otros</item>
+        <item>{dropdown_separator}</item>
+        <item>{dropdown_header}Autos</item>
+        <item>Carros</item>
+        <item>Motos</item>
+        <item>Bicicletas</item>
+        <item>Piezas/Accesorios</item>
+        <item>Alquiler</item>
+        <item>Mecánico</item>
+        <item>Otros</item>
+        <item>{dropdown_separator}</item>
+        <item>{dropdown_header}Viviendas</item>
+        <item>Compra/Venta</item>
+        <item>Permuta</item>
+        <item>Alquiler a cubanos</item>
+        <item>Alquiler a extranjeros</item>
+        <item>Casa en la playa</item>
+        <item>{dropdown_separator}</item>
+        <item>{dropdown_header}Empleos</item>
+        <item>Ofertas de empleo</item>
+        <item>Busco empleo</item>
+        <item>{dropdown_separator}</item>
+        <item>{dropdown_header}Servicios</item>
+        <item>Clases/Cursos</item>
+        <item>Informática/Programación</item>
+        <item>Películas/Series/Videos</item>
+        <item>Limpieza/Doméstico</item>
+        <item>Foto/Video</item>
+        <item>Construcción/Mantenimiento</item>
+        <item>Reparación Electrónica</item>
+        <item>Peluquería/Barbería/Belleza</item>
+        <item>Restaurantes/Gastronomía</item>
+        <item>Diseño/Decoración</item>
+        <item>Música/Animación/Shows</item>
+        <item>Relojero/Joyero</item>
+        <item>Gimnasio/Masaje/Entrenador</item>
+        <item>Otros</item>
+        <item>{dropdown_separator}</item>
+        <item>{dropdown_header}Comptadoras</item>
+        <item>PC de Escritorio</item>
+        <item>Laptop</item>
+        <item>Microprocesador</item>
+        <item>Monitor</item>
+        <item>Motherboard</item>
+        <item>Memoria RAM/FLASH</item>
+        <item>Disco Duro Interno/Externo</item>
+        <item>Chasis/Fuente</item>
+        <item>Tarjeta de Video</item>
+        <item>Tarjeta de Sonido/Bocinas</item>
+        <item>Quemador/Lector DVD/CD</item>
+        <item>Backup/UPS</item>
+        <item>Impresora/Cartuchos</item>
+        <item>Modem/Wifi/Red</item>
+        <item>Webcam/Microf/Audífono</item>
+        <item>Teclado/Mouse</item>
+        <item>Internet/Email</item>
+        <item>CD/DVD Virgen</item>
+        <item>Otros</item>
+    </array>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
