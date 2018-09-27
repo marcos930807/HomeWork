@@ -79,6 +79,7 @@ class MainActivity : CAppCompatActivity(), NavigationView.OnNavigationItemSelect
         when (item.itemId) {
             R.id.nav_noticelist -> {
                 replaceFragment(R.id.content_frame, NoticeListFragment.newInstance())
+                //ading this comment to test push from ssh
 
             }
             R.id.nav_gallery -> {
