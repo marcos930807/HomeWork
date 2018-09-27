@@ -9,6 +9,8 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.view.Menu
 import android.view.MenuItem
 import com.blankj.utilcode.util.Utils
+import com.pedro.library.AutoPermissions
+import com.pedro.library.AutoPermissionsListener
 import cu.marcos930807.robotrevo.ui.utils.replaceFragment
 
 
@@ -24,13 +26,26 @@ import io.multimoon.colorful.CAppCompatActivity
 import org.jetbrains.anko.toast
 
 
-class MainActivity : CAppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : CAppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, AutoPermissionsListener {
+
+    override fun onDenied(requestCode: Int, permissions: Array<String>) {
+    //    toast("denied")
+    }
+
+    override fun onGranted(requestCode: Int, permissions: Array<String>) {
+    //    toast("granted")
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Utils.init(this)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+      //  AutoPermissions.loadAllPermissions(this, 1)
+        AutoPermissions.loadActivityPermissions(this, 1)
+
+
 
 
 
@@ -41,6 +56,12 @@ class MainActivity : CAppCompatActivity(), NavigationView.OnNavigationItemSelect
 
         nav_view.setNavigationItemSelectedListener(this)
         replaceFragment(R.id.content_frame, NoticeListV2.newInstance())
+        nav_view.setCheckedItem(R.id.nav_gallery)
+    }
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        AutoPermissions.parsePermissions(this, requestCode, permissions, this)
     }
 
     override fun onBackPressed() {
@@ -77,22 +98,22 @@ class MainActivity : CAppCompatActivity(), NavigationView.OnNavigationItemSelect
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_noticelist -> {
-                replaceFragment(R.id.content_frame, NoticeListFragment.newInstance())
-                //ading this comment to test push from ssh
-                //ading this other to test commit and push from android studio
-            }
+//            R.id.nav_noticelist -> {
+//                replaceFragment(R.id.content_frame, NoticeListFragment.newInstance())
+//                //ading this comment to test push from ssh
+//                //ading this other to test commit and push from android studio
+//            }
             R.id.nav_gallery -> {
                 replaceFragment(R.id.content_frame, NoticeListV2.newInstance())
             }
-            R.id.nav_slideshow -> {
-                replaceFragment(R.id.content_frame, ClientFragment.newInstance())
-
-            }
+//            R.id.nav_slideshow -> {
+//                replaceFragment(R.id.content_frame, ClientFragment.newInstance())
+//
+//            }
             R.id.nav_manage -> {
                 replaceFragment(R.id.content_frame, ExpandableClientFragment.newInstance())
             }
-//            R.id.nav_share -> {.00.
+
 
 
 

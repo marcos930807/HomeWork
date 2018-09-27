@@ -72,6 +72,8 @@ dependencies {
     implementation 'com.airbnb.android:lottie:2.5.5'
     //Iconos para contactos
     implementation 'com.github.ivbaranov:materiallettericon:0.2.3'
+    //Gestion de Permisos
+    implementation 'com.github.pedroSG94:AutoPermissions:1.0.3'
    //SQLLite to EXCEL
  //   implementation 'com.ajts.androidmads.SQLite2Excel:library:1.0.2'
     //Utiles de Blankj

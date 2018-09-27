@@ -24,6 +24,7 @@ import cu.marcos930807.robotrevo.ui.recyclerview.dialogs_adapters.ColorsAdapter
 import io.multimoon.colorful.BaseTheme
 import io.multimoon.colorful.Colorful
 import io.multimoon.colorful.ThemeColor
+import kotlinx.android.synthetic.main.app_bar_main.*
 import org.jetbrains.anko.act
 
 /**
@@ -56,8 +57,8 @@ class SettingsActivity : AppCompatPreferenceActivity(), SharedPreferences.OnShar
         super.onCreate(savedInstanceState)
 
         Colorful().apply(this, false, BaseTheme.THEME_APPCOMPAT)
-        PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this);
-        //  setupActionBar()
+        PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this)
+        setupActionBar()
 
 
     }
@@ -66,6 +67,7 @@ class SettingsActivity : AppCompatPreferenceActivity(), SharedPreferences.OnShar
      * Set up the [android.app.ActionBar], if the API is available.
      */
     private fun setupActionBar() {
+        setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
@@ -115,8 +117,8 @@ class SettingsActivity : AppCompatPreferenceActivity(), SharedPreferences.OnShar
             // to their values. When their values change, their summaries are
             // updated to reflect the new value, per the Android Design
             // guidelines.
-            bindPreferenceSummaryToValue(findPreference("example_text"))
-            bindPreferenceSummaryToValue(findPreference("example_list"))
+        //    bindPreferenceSummaryToValue(findPreference("example_text"))
+         //   bindPreferenceSummaryToValue(findPreference("example_list"))
 
             val myPref = findPreference("primarycolor")
             myPref.setOnPreferenceClickListener {
