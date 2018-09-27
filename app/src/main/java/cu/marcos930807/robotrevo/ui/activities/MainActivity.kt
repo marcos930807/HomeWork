@@ -80,7 +80,7 @@ class MainActivity : CAppCompatActivity(), NavigationView.OnNavigationItemSelect
             R.id.nav_noticelist -> {
                 replaceFragment(R.id.content_frame, NoticeListFragment.newInstance())
                 //ading this comment to test push from ssh
-
+                //ading this other to test commit and push from android studio
             }
             R.id.nav_gallery -> {
                 replaceFragment(R.id.content_frame, NoticeListV2.newInstance())
